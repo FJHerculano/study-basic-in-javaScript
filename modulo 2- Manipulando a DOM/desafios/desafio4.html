@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset='utf-8'>
+  <title>Estudo  JavaScript - Rocketseat</title>
+
+</head>
+<body>
+<h2>Estudo</h2>
+
+ <ul>123</ul>
+ <input type="text" name="nome">
+<button onClick="adicionarNome()">Adicionar</button>
+
+  <script>
+    // Desafio 3 - DOM,  modulo 2, do curso de java script do started;
+    //javaScript
+    // imprime duas vezes a lista.
+   // adiciona uma nova posição na lista, porém com resultado
+   // undefined.
+
+    var nomes = ["Diego", "Gabriel", "Lucas"];
+    var nomesElement = document.querySelector('ul') ;
+    var inputElement = document.querySelector('input') ; 
+
+for(nome of nomes){
+  var nomeslist = document.createElement('li');
+  var  textElement = document.createTextNode(nome) ;     
+    nomeslist.appendChild(textElement);
+    nomesElement.appendChild(nomeslist);
+}
+
+function adicionarNome(texto){
+  var nomeslist =  document.createElement('li');
+  var textElement = document.createTextNode(texto);
+ nomeslist.appendChild(textElement);
+ nomesElement.appendChild(nomeslist); 
+} 
+
+function add(){
+  adicionarNome(inputElement.value);
+}
+
+for (nome of nomes){
+  adicionarNome(nome);
+}
+           </script>
+</body>
+</html>

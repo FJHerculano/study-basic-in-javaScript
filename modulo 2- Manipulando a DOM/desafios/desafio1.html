@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset='utf-8'>
+  <title>Estudo  JavaScript - Rocketseat</title>
+
+</head>
+<body>
+<h2>Estudo</h2>
+
+    <button class="nome">me pressione</button>
+    <div class="quadrado"></div>
+
+  <script>
+    // Desafio 1 - DOM,  modulo 2, do curso de java script do started;
+    //javaScript
+    // não apresentou solução satisfatoria ainda...
+    var buttonElement = document.getElementsByClassName('nome');
+    var quadradoElement = document.getElementsByClassName('quadrado');
+    
+    buttonElement.onlick = function(){
+      var quadrado = document.querySelector('div.quadrado' );
+
+      quadrado.style.width = 100;
+      quadrado.style.height = 100;
+      // não sei motivo do erro na cor!
+      //quadrado.style.backgroundColor = #f00;
+
+      quadradoElement.appendChild(quadrado);
+
+    };
+
+      </script>
+</body>
+</html>

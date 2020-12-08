@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset='utf-8'>
+  <title>Estudo  JavaScript - Rocketseat</title>
+
+</head>
+<body>
+<h2>Estudo</h2>
+<div id="app">
+
+  <input type="text " name="nome"  id="nome" />
+  
+  </div>
+  <script>
+   var linkElement = document.createElement('a');
+  linkElement.setAttribute('href', 'http://rocketseat.com.br');
+  linkElement.setAttribute('title', 'site do curso');
+  
+    var textElement = document.createTextNode('acessar curso');
+    linkElement.appendChild(textElement);
+
+    var containerElement = document.querySelector('#app');
+    containerElement.appendChild(linkElement);
+
+    var inputElement = document.querySelector('#nome');
+    //remover um input da tela através do java script
+    containerElement.removeChild(inputElement);
+      </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset='utf-8'>
+  <title>Estudo  JavaScript - Rocketseat</title>
+
+</head>
+<body>
+<h2>Estudo</h2>
+
+ <ul>123</ul>
+
+  <script>
+    // Desafio 3 - DOM,  modulo 2, do curso de java script do started;
+    //javaScript
+    var nomes = ["Diego", "Gabriel", "Lucas"];
+    var nomesLista = document.querySelector('ul') ;
+
+for(nome of nomes){
+  var nomeslist = document.createElement('li');
+  var  textElement = document.createTextNode(nome) ;     
+    nomeslist.appendChild(textElement);
+    nomesLista.appendChild(nomeslist);
+}
+           </script>
+</body>
+</html>

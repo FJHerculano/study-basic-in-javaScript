@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset='utf-8'>
+  <title>Estudo  JavaScript - Rocketseat</title>
+
+</head>
+<body>
+<h2>Estudo</h2>
+
+  <script>
+    // Quinto questão do desafio do modulo 1, do curso de java script do started;
+    //javaScript
+   
+    var usuarios = [
+ {
+ nome: "Diego",
+ habilidades: ["Javascript", "ReactJS", "Redux"]
+ },
+ {
+ nome: "Gabriel",
+ habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+ }
+];
+
+function mostrarResultado(usuarios){
+  for (usuario of usuarios){
+    console.log("O " + usuario.nome +" possui as habilidades: " +usuario.habilidades.join(", "));
+  }
+}
+console.log(mostrarResultado(usuarios));
+  </script>
+</body>
+</html>

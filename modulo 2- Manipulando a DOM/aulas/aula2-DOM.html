@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset='utf-8'>
+  <title>Estudo  JavaScript - Rocketseat</title>
+
+</head>
+<body>
+<h2>Estudo</h2>
+<div id="app">
+  <!--Estarão comentadas todas as formas de se fazer referencia ao input-->
+ <input type="text " name="nome" />
+ <!-- <input type="text " name="nome" id="nome" class="nome"/> -->
+  <button class="botao">adicionar</button>
+  <!--Estarão comentadas todas as formas de se fazer referencia ao input-->
+   
+  </div>
+  <script>
+    // Aula manipulando a DOM  modulo 2, do curso de java script do started;
+    //javaScript
+
+        
+        // busca elemento referenciando seu id.
+        //var inputElement = document.getElementsById('nome');
+
+        // Retorno todos os elementos com a tag input.
+        // se passar a posição do elemento ele pega o input cujo o qual foi selecionado
+        // lembrando que se inicia do zero.
+        //var inputElement = document.getElementsByTagName('input')[0];        
+        // Fazendo busca através da classe
+        //var inputElement = document.getElementsByClassName('nome')[0];
+      
+        // descrever a rota pra se encontra o elemento("vc anda na DOM")
+        //var inputElement = document.querySelector(' div#app input');
+        // buscando através de propiedade do elemento, no caso name referenciado por
+        // a palavra nome. 
+        //var inputElement = document.querySelector('input[name=nome]');
+
+        //busca todos os elementos
+        //var inputElement = document.querySelectorAll('input');
+
+        //console.log(inputElement);
+
+        var inputElement = document.querySelector('input[name=nome]');
+        var btnElement = document.querySelector('button.botao');
+
+        btnElement.onclick = function () {
+            var text = inputElement.value;
+            alert(text);
+        }
+ 
+      </script>
+</body>
+</html>
